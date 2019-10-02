@@ -13,13 +13,19 @@ if(mouse_x >= x && mouse_x <= x + sprite_width){
 		if(global.currentCostume == global.costumeNum){
 			instance_destroy(obj_equipButton)
 			instance_destroy(obj_equippedLabel)
-			instance_create_layer(obj_labelOrigin.x, obj_labelOrigin.y, "Instances", obj_equippedLabel)
+			instance_destroy(obj_buyButton)
+			instance_create_layer(obj_labelOrigin.x, obj_labelOrigin.y, "GUI", obj_equippedLabel)
 		} else {
 			instance_destroy(obj_equipButton)
 			instance_destroy(obj_equippedLabel)
-			instance_create_layer(obj_labelOrigin.x, obj_labelOrigin.y, "Instances", obj_equipButton)
+			instance_destroy(obj_buyButton)
+			if(global.costumesOwned[global.costumeNum] == true){
+				instance_create_layer(obj_labelOrigin.x, obj_labelOrigin.y, "GUI", obj_equipButton)
+			} else {
+				instance_create_layer(obj_labelOrigin.x, obj_labelOrigin.y, "GUI", obj_buyButton)
+			}
 		}
 		
-		instance_create_layer(obj_costumeOrigin.x, obj_costumeOrigin.y, "Instances", global.costumes[global.costumeNum])
+		instance_create_layer(obj_costumeOrigin.x, obj_costumeOrigin.y, "GUI", global.costumes[global.costumeNum])
 	}
 }

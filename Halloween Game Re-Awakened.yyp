@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01385a52-295e-44ac-9c17-9837d0bd79ce",
+            "Value": {
+                "id": "bdce63ee-5315-4192-ac77-c2e81dcf2316",
+                "resourcePath": "fonts\\fn_opensans15\\fn_opensans15.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "015e3999-2259-4004-8b40-54b3fcfc2528",
             "Value": {
                 "id": "4ea0507a-66ed-4c1f-a628-56a4265963e7",
@@ -44,6 +52,14 @@
                 "id": "c7c79526-8900-4ad4-9923-ef72958e4b2d",
                 "resourcePath": "views\\0e503c33-1c80-445c-9af1-044f4969da56.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1cf589da-bc60-4eea-81c8-eb20408128ea",
+            "Value": {
+                "id": "b2449e29-9476-44b7-bade-3674ee05ff19",
+                "resourcePath": "fonts\\fn_opensans25\\fn_opensans25.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -135,6 +151,14 @@
             }
         },
         {
+            "Key": "462d0045-40e2-4afc-9066-526c8be81da9",
+            "Value": {
+                "id": "11374c03-6a30-41cb-af12-3eaa1edec513",
+                "resourcePath": "scripts\\draw_set_font_ext\\draw_set_font_ext.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4715dcb3-f191-4c71-92da-a71bc78119b5",
             "Value": {
                 "id": "9390abad-8626-4b93-be66-d1cfbb698cc2",
@@ -207,6 +231,22 @@
             }
         },
         {
+            "Key": "832adae6-095b-4304-9824-e1c53d78736e",
+            "Value": {
+                "id": "7150fc55-f893-4300-8c19-daf80c267eec",
+                "resourcePath": "fonts\\fn_opensans20\\fn_opensans20.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "8c0bccb9-a8ef-4d76-95b2-aa8dde34a75c",
+            "Value": {
+                "id": "d72bc747-e139-4bf7-8f1e-c44e6f9aa3f1",
+                "resourcePath": "fonts\\fn_opensans10\\fn_opensans10.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "8f739d81-4b37-4d75-bb82-f5f9f2d6e27d",
             "Value": {
                 "id": "8c369a6a-a77b-4f8a-be81-f4c106301d7c",
@@ -215,10 +255,18 @@
             }
         },
         {
+            "Key": "971fecfb-8c25-4bd6-b220-850cd18778ee",
+            "Value": {
+                "id": "d211b108-696f-436d-8f31-a306fdaba30a",
+                "resourcePath": "objects\\obj_priceText\\obj_priceText.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "99db3ab9-fea1-4ea0-9ae2-7abd97e2dee5",
             "Value": {
                 "id": "f2292cf4-9cd9-4851-9da9-89bc65492ee8",
-                "resourcePath": "scripts\\SaveAllData\\SaveAllData.yy",
+                "resourcePath": "scripts\\draw_set_size\\draw_set_size.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -263,6 +311,14 @@
             }
         },
         {
+            "Key": "c4502e0e-ec2b-4268-b562-8d7df6e0b427",
+            "Value": {
+                "id": "8f8ecfe6-06c4-42dd-a1c8-495fb011f5c1",
+                "resourcePath": "objects\\obj_buyButton\\obj_buyButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c710abdc-ce64-413d-ae4f-c8b4c349734c",
             "Value": {
                 "id": "c9178efa-d460-4d2f-866d-72ae7d17a51b",
@@ -284,6 +340,14 @@
                 "id": "5a6290c6-d5cb-4e08-a61f-ca04ccd004bd",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d19f456c-5497-4b2e-b73b-8f4769508cda",
+            "Value": {
+                "id": "5cdd95f9-6376-4904-bdd3-e05cbfbf74f4",
+                "resourcePath": "sprites\\spr_buyButton\\spr_buyButton.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -392,7 +456,8 @@
         }
     ],
     "script_order": [
-        "99db3ab9-fea1-4ea0-9ae2-7abd97e2dee5"
+        "99db3ab9-fea1-4ea0-9ae2-7abd97e2dee5",
+        "462d0045-40e2-4afc-9066-526c8be81da9"
     ],
     "tutorial": ""
 }
