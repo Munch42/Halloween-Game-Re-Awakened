@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "03007bcb-0d42-4e51-95ee-d7499b40f3ef",
+            "Value": {
+                "id": "b5c22c66-fa04-4d80-ad96-a3207875f6c3",
+                "resourcePath": "objects\\obj_moneyText\\obj_moneyText.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0e503c33-1c80-445c-9af1-044f4969da56",
             "Value": {
                 "id": "c7c79526-8900-4ad4-9923-ef72958e4b2d",
