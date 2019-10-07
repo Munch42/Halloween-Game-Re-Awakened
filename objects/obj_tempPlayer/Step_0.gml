@@ -11,3 +11,8 @@ if(horizontalInput != 0  || verticalInput !=0)  // if this wasn't here and no ke
 	x += moveX;
 	y += moveY;
 }
+
+if(place_meeting(x,y, obj_house))
+{
+	x = x + 100;
+}
