@@ -21,7 +21,16 @@ if(horizontalInput != 0  || verticalInput !=0)  // if this wasn't here and no ke
 }
 
 
-if(place_meeting(x,y, obj_house))
+if(place_meeting(x + sprite_width / 2, y + sprite_height / 2, obj_house))
 {
-	
+	var house = instance_place(x + sprite_width / 2, y + sprite_height / 2, obj_house);
+	instance_create_layer(house.x, house.y, "Person_Monster", obj_person);
+
 }
+if(place_meeting(x - sprite_width / 2, y - sprite_height / 2, obj_house))
+{
+	var house = instance_place(x - sprite_width / 2, y - sprite_height / 2, obj_house);
+	instance_create_layer(house.x, house.y, "Person_Monster", obj_person);
+
+}
+
