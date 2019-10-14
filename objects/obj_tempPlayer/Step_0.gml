@@ -8,11 +8,20 @@ if(horizontalInput != 0  || verticalInput !=0)  // if this wasn't here and no ke
 	moveX = lengthdir_x(spd, directionToMove); // movement on x axis
 	moveY = lengthdir_y(spd, directionToMove); // movement on y axis
 
-	x += moveX;
-	y += moveY;
+
+	// check to see if next move is not a collision.  If not move.
+	if(!place_meeting(x+moveX, y, obj_house))
+	{
+		x += moveX;	
+	}
+	if(!place_meeting(x, y+moveY, obj_house))
+	{
+		y += moveY;
+	}
 }
+
 
 if(place_meeting(x,y, obj_house))
 {
-	x = x + 100;
+	
 }
