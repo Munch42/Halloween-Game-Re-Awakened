@@ -8,11 +8,29 @@ if(horizontalInput != 0  || verticalInput !=0)  // if this wasn't here and no ke
 	moveX = lengthdir_x(spd, directionToMove); // movement on x axis
 	moveY = lengthdir_y(spd, directionToMove); // movement on y axis
 
-	x += moveX;
-	y += moveY;
+
+	// check to see if next move is not a collision.  If not move.
+	if(!place_meeting(x+moveX, y, obj_house))
+	{
+		x += moveX;	
+	}
+	if(!place_meeting(x, y+moveY, obj_house))
+	{
+		y += moveY;
+	}
 }
 
-if(place_meeting(x,y, obj_house))
+
+if(place_meeting(x + sprite_width / 2, y + sprite_height / 2, obj_house))
 {
-	x = x + 100;
+	var house = instance_place(x + sprite_width / 2, y + sprite_height / 2, obj_house);
+	instance_create_layer(house.x, house.y, "Person_Monster", obj_person);
+
 }
+if(place_meeting(x - sprite_width / 2, y - sprite_height / 2, obj_house))
+{
+	var house = instance_place(x - sprite_width / 2, y - sprite_height / 2, obj_house);
+	instance_create_layer(house.x, house.y, "Person_Monster", obj_person);
+
+}
+
