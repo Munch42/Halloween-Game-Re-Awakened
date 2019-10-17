@@ -1,3 +1,8 @@
 /// @description Setup
-image_xscale = 4
-image_yscale = 4
+if(room == ChangeRoom){
+	image_xscale = 4
+	image_yscale = 4
+}
+
+spd = 2;
+
