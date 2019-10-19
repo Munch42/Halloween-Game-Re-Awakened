@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "2a80f29c-a5e0-4b54-b5e9-ea37666094be",
+            "Value": {
+                "id": "2df7ab90-8bc6-4f55-9b36-433d6f23a5d6",
+                "resourcePath": "objects\\obj_monster\\obj_monster.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2c8ae238-309a-4227-b541-b76140ee67a8",
             "Value": {
                 "id": "18f73ff1-c651-4f62-81f6-851ccd54d15f",
@@ -263,11 +271,43 @@
             }
         },
         {
+            "Key": "502adfba-f115-447e-a2f6-3c30c9d6f570",
+            "Value": {
+                "id": "dcedc880-b0e8-429f-b878-10fc3a0cbd07",
+                "resourcePath": "sprites\\spr_ultimate_costume\\spr_ultimate_costume.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "52087e39-881e-4694-a845-93def227bc79",
+            "Value": {
+                "id": "b95a9b91-b0d7-492b-8648-190cb3363b82",
+                "resourcePath": "sprites\\spr_monster\\spr_monster.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5860bb83-de47-46ed-9035-a1a0b4d70dc8",
+            "Value": {
+                "id": "5db39a23-97a9-4aac-86d6-484dd5da35b7",
+                "resourcePath": "objects\\obj_costume4\\obj_costume4.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5ba0487a-dd6a-4a9e-9842-4c773ef53596",
             "Value": {
                 "id": "c8e436cd-f0a8-44de-9dee-e09336f1f351",
                 "resourcePath": "rooms\/ChangeRoom\/ChangeRoom.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "5ecb3495-7ed3-4519-8f22-22dafef7d053",
+            "Value": {
+                "id": "902ec3f6-8c23-4130-93fd-99b574625b50",
+                "resourcePath": "objects\\obj_houses\\obj_houses.yy",
+                "resourceType": "GMObject"
             }
         },
         {

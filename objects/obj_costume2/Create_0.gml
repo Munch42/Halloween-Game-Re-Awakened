@@ -4,5 +4,3 @@ if(room == ChangeRoom){
 	image_yscale = 4
 }
 
-spd = 2;
-

@@ -5,16 +5,6 @@
     "name": "obj_costume3",
     "eventList": [
         {
-            "id": "71582269-4599-4644-8ca2-3db4d61b4d3c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "cf7eaee7-dab1-4d04-8edd-aa4560a94864"
-        },
-        {
             "id": "304175bc-60dd-403d-8325-b3accd6d966d",
             "modelName": "GMEvent",
             "mvc": "1.0",
