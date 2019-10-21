@@ -16,3 +16,7 @@ global.costumePrices[3] = 200;
 global.currentCostume = 0;
 global.money = 350;
 global.candy = 0;
+for(i = 0; i < 16; i++)
+{
+	global.houses[i] = 0;
+}

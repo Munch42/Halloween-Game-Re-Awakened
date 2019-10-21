@@ -57,7 +57,17 @@ if(horizontalInput != 0  || verticalInput !=0)  // if this wasn't here and no ke
 if(place_meeting(x, y + sprite_height / 2, obj_houses))
 {
 	var house = instance_place(x, y + sprite_height / 2, obj_houses);
-	instance_create_layer(house.x, house.y, "Person_Monster", choose(obj_person, obj_monster));
+	for(i = 0; i < array_length_1d(global.houses); i++)
+	{
+		if(global.houses[i] != house)
+		{
+			break;
+		}
+		else
+		{
+			instance_create_layer(house.x, house.y, "Person_Monster", choose(obj_person, obj_monster));
+		}
+	}
 
 }
 if(place_meeting(x, y - sprite_height / 2, obj_houses))
