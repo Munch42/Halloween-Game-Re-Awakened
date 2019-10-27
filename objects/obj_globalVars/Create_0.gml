@@ -14,7 +14,7 @@ global.costumePrices[1] = 50;
 global.costumePrices[2] = 150;
 global.costumePrices[3] = 200;
 global.currentCostume = 0;
-global.money = 350;
+global.money = 400;
 global.candy = 0;
 for(i = 0; i < 16; i++)
 {

@@ -54,41 +54,52 @@ if(horizontalInput != 0  || verticalInput !=0)  // if this wasn't here and no ke
 }
 
 
-if(place_meeting(x, y + sprite_height / 2, obj_houses))
+if(place_meeting(x, y + sprite_height / 2, obj_houses) || place_meeting(x, y - sprite_height / 2, obj_houses))
 {
-	var house = instance_place(x, y + sprite_height / 2, obj_houses);
-	var add_to_array = true;
-	for(i = 0; i < array_length_1d(global.houses); i++)
+	with(instance_nearest(x, y + sprite_height / 2, obj_houses))
 	{
-		if(global.houses[i] == house)
-		{
-			add_to_array = false;
-			break;
+		if(visited < 1)
+		{	
+			visited += 1
+			instance_create_layer(x, y, "Person_Monster", choose(obj_person, obj_monster));
+			show_debug_message(visited);
 		}
 	}
-	if(add_to_array)
-	{
-		global.houses[i] = house;
-		instance_create_layer(house.x, house.y, "Person_Monster", choose(obj_person, obj_monster));
-	}	
 }
+//{
+//	var house = instance_place(x, y + sprite_height / 2, obj_houses);
+//	var add_to_array = true;
+//	for(i = 0; i < array_length_1d(global.houses); i++)
+//	{
+//		if(global.houses[i] == house)
+//		{
+//			add_to_array = false;
+//			break;
+//		}
+//	}
+//	if(add_to_array)
+//	{
+//		global.houses[i] = house;
+//		instance_create_layer(house.x, house.y, "Person_Monster", choose(obj_person, obj_monster));
+//	}	
+//}
 
-if(place_meeting(x, y - sprite_height / 2, obj_houses))
-{
-	var house = instance_place(x, y - sprite_height / 2, obj_houses);
-	var add_to_array = true;
-	for(i = 0; i < array_length_1d(global.houses); i++)
-	{
-		if(global.houses[i] == house)
-		{
-			add_to_array = false;
-			break;
-		}
-	}
-	if(add_to_array)
-	{
-		global.houses[i] = house;
-		instance_create_layer(house.x, house.y, "Person_Monster", choose(obj_person, obj_monster));
-	}	
-}
+//if(place_meeting(x, y - sprite_height / 2, obj_houses))
+//{
+//	var house = instance_place(x, y - sprite_height / 2, obj_houses);
+//	var add_to_array = true;
+//	for(i = 0; i < array_length_1d(global.houses); i++)
+//	{
+//		if(global.houses[i] == house)
+//		{
+//			add_to_array = false;
+//			break;
+//		}
+//	}
+//	if(add_to_array)
+//	{
+//		global.houses[i] = house;
+//		instance_create_layer(house.x, house.y, "Person_Monster", choose(obj_person, obj_monster));
+//	}	
+//}
 
