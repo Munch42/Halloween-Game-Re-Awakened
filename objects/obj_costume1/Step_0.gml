@@ -61,8 +61,15 @@ if(place_meeting(x, y + sprite_height / 2, obj_houses) || place_meeting(x, y - s
 		if(visited < 1)
 		{	
 			visited += 1
-			instance_create_layer(x, y, "Person_Monster", choose(obj_person, obj_monster));
-			show_debug_message(visited);
+			whichOccupant = irandom_range(0,1);
+			if(whichOccupant == 0)
+			{
+				instance_create_layer(x, y, "Person_Monster", obj_person);
+			}
+			else if(whichOccupant == 1)
+			{
+				instance_create_layer(x, y, "Person_Monster", obj_monster);
+			}
 		}
 	}
 }

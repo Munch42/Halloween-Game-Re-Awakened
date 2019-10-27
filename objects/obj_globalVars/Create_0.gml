@@ -1,4 +1,5 @@
 /// @description Create Global Variables
+randomize();
 global.currentFont = "fn_arial";
 global.costumes[0] = obj_costume1;
 global.costumes[1] = obj_costume2;
@@ -16,7 +17,7 @@ global.costumePrices[3] = 200;
 global.currentCostume = 0;
 global.money = 400;
 global.candy = 0;
-for(i = 0; i < 16; i++)
-{
-	global.houses[i] = 0;
-}
+//for(i = 0; i < 16; i++)
+//{
+//	global.houses[i] = 0;
+//}
