@@ -65,10 +65,12 @@ if(place_meeting(x, y + sprite_height / 2, obj_houses) || place_meeting(x, y - s
 			if(whichOccupant == 0)
 			{
 				instance_create_layer(x, y, "Person_Monster", obj_person);
+				instance_create_layer(room_width / 2 - sprite_get_width(spr_box) / 2, 275, "Text", obj_textbox);
 			}
 			else if(whichOccupant == 1)
 			{
 				instance_create_layer(x, y, "Person_Monster", obj_monster);
+				
 			}
 		}
 	}
